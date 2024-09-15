@@ -1,21 +1,34 @@
 body {
-    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    background-image: linear-gradient(to top, #fff1eb, #ace0f9);
+    background-size: cover; /* 使背景图充满整个视口 */
     font-family: Arial, sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .logo {
     max-width: 100px;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
 .buttons button {
-    display: inline-block;
     margin: 10px;
     padding: 10px 20px;
     border: none;
@@ -30,13 +43,19 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
+.sections {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
 .sections section {
-    display: inline-block;
-    width: calc(25% - 20px);
+    width: calc(50% - 20px);
     margin: 10px;
     padding: 20px;
-    vertical-align: top;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 200px; /* 可以调整以适应内容 */
 }
